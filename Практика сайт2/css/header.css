@@ -1,0 +1,233 @@
+.header {
+	height: 10vh;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 100px;
+}
+
+.header__logo {
+	font-size: 25px;
+	font-family: "Open Sans";
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+.header__logo:hover {
+	color: rgb(25, 189, 154);
+}
+
+.header__logo span:hover {
+	transition: 0.3s;
+	color: #fff;
+}
+
+.menu__link {
+	font-size: 16px;
+	font-family: "Open Sans";
+	line-height: 0.75;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	transition: 0.2s;
+}
+
+.menu__link:hover {
+	border: 1px solid #fff;
+}
+
+
+/*=========fulscreen=========*/
+.fulscreen {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: 50% 65%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	margin-top: -10vh;
+}
+
+.fulscreen__content {
+	margin: auto;
+	max-width: 620px;
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.fulscreen__content-title {
+	font-size: 35px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 2;
+	letter-spacing: 5px;
+}
+
+.fulscreen__content-text {
+	font-size: 16px;
+	font-family: "Open Sans";
+	line-height: 1.75;
+}
+
+.fulscreen__hover {
+	border-radius: 50%;
+	background-color: rgb(25, 189, 154);
+	width: 36px;
+	height: 36px;
+	margin-bottom: 60px;
+	cursor: pointer;
+	border: none;
+}
+
+.fulscreen__hover:after,
+.fulscreen__hover:before {
+	display: block;
+	content: '';
+	width: 13px;
+	height: 2px;
+	background-color: #fff;
+	transform-origin: center center;
+	margin-bottom: 11px;
+	margin-top: auto;
+	transition: 0.3s;
+}
+
+.fulscreen__hover:before {
+	transform-origin: center right;
+	transform: rotate(48deg);
+}
+
+.fulscreen__hover:after {
+	transform-origin: center left;
+	transform: rotate(-48deg);
+}
+
+.fulscreen__hover:hover:before{
+	margin-bottom: 8px;
+	transform: rotate(55deg);
+}
+
+.fulscreen__hover:hover:after{
+	margin-bottom: 8px;
+	transform: rotate(-55deg);
+}
+
+.fulscreen__hover:active:before{
+	margin-bottom: 5px;
+	transform: rotate(60deg);
+}
+
+.fulscreen__hover:active:after{
+	margin-bottom: 5px;
+	transform: rotate(-60deg);
+}
+
+@media (max-width: 992px) {
+	.header {
+		padding: 0 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	.header__menu-btn {
+		width: 30px;
+		height: 30px;
+		background-color: rgba(0, 0, 0, 0);
+		position: relative;
+		transition: 0.15s;
+		z-index: 50;
+		justify-content: space-around;
+	}
+
+	.span::after,
+	.span::before,
+	.span {
+		display: block;
+		width: 20px;
+		height: 2px;
+		background-color: #000;
+		position: relative;
+	}
+
+	.span::after,
+	.span::before {
+		position: absolute;
+		content: '';
+	}
+
+	.span::after {
+		transform: translateY(-5px);
+	}
+
+	.span::before {
+		transform: translateY(5px);
+	}
+
+	.menu_btn_active {
+		transform: rotate(90deg);
+		transition: 0.4s;
+	}
+
+	.menu_btn_active .span::before {
+		transform: rotate(-35deg);
+		transform-origin: right top;
+		right: 0;
+		width: 10px;
+	}
+
+	.menu_btn_active .span::after {
+		transform: rotate(35deg);
+		transform-origin: right bottom;
+		right: 0;
+		width: 10px;
+	}
+
+	.header__menu {
+		width: 100%;
+		height: 40vh;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		z-index: 10;
+		/*transition: 0.45s;*/
+		transition: 0.9s;
+		opacity: 0.5;
+		backdrop-filter: blur(5px);
+	}
+
+	.menu_active {
+		height: 100vh;
+		/*transition: 0.25s;*/
+		transition: 0.9s;
+		top: 0;
+		opacity: 1;
+	}
+
+	.menu__link {
+		font-size: 25px;
+		margin: 15px 0;
+	}
+
+
+/*=========fulscreen=========*/
+	.fulscreen {
+		background-position: 35% 65%;
+	}
+
+	.fulscreen__content-title {
+		font-size: 29px;
+		letter-spacing: 3px;
+		line-height: 1.5;
+	}
+}

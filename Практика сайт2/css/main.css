@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0 !important;
+}
+
+body {
+	word-wrap: break-word;
+	position: relative;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #bababa;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #7a7a7a;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+button {
+	cursor: pointer;
+}
+
+.o-h {
+	overflow: hidden;
+}
+
+.d-f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.fd-c {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.ai-c {
+	-ms-align-items: center;
+	align-items: center;
+}
+.jc-c {
+	justify-content: center;
+}
+
+.padding {
+	padding: 75px calc(50% - 550px);
+}
+
+.subtitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	max-width: 470px;
+	padding: 0 15px;
+}
+
+.subtitle h2 {
+	font-size: 20px;
+	font-family: "Source Sans Pro";
+	color: rgb(51, 59, 70);
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: 300;
+	letter-spacing: 4px;
+}
+
+.subtitle p {
+	margin-top: 45px;
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(129, 134, 142);
+	line-height: 1.786;
+	text-align: center;
+}
+
+
+.theTeam {
+	margin: 0 auto;
+	font-family: "Open Sans";
+	color: rgb(129, 134, 142);
+	font-size: 16px;
+}
+
+.theTeam__block {
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+.theTeam__image {
+	width: max-content;
+}
+
+.theTeam__content {
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	text-align: right;
+	max-width: 500px;
+	padding-right: 45px;
+}
+.theTeam__name {
+	border-right: 4px solid #19bd9a;
+	margin: 0 -45px 30px 0;
+	padding-right: 45px;
+}
+.theTeam__name h3 {
+	font-size: 22px;
+	color: rgb(70, 70, 70);
+	font-weight: 300;
+}
+.theTeam__name p {
+	font-family: "Source Sans Pro";
+	text-transform: uppercase;
+}
+.theTeam__text {
+	line-height: 1.8;
+}
+
+.progress {
+	width: 70%;
+}
+.progress__bar {
+	margin-top: 35px;
+}
+
+progress {
+	background-color: #19bd9a;
+	width: 100%;
+	height: 4px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #19bd9a;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e1e4e9;
+}
+
+.progress__title {
+	justify-content: space-between;
+	font-size: 18px;
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.theTeam__pagination {
+	margin-top: 60px;
+}
+.theTeam__pagination-bullet {
+	background-color: #fff;
+	border: 1px solid #19bd9a;
+	border-radius: 50%;
+	list-style-type: none;
+	width: 11px;
+	height: 11px;
+	margin: 0 5px;
+	transition: 0.2s;
+}
+.theTeam__ul li:hover {
+	background-color: #19bd9a;
+	cursor: pointer;
+}
+.theTeam__pagination-bullet-active {
+	background-color: #19bd9a;
+}
+
+@media (max-width: 1200px) {
+	.padding {
+		padding: 70px calc(50% - 450px);
+	}
+}
+@media (max-width: 992px) {
+	.padding {
+		padding: 65px calc(50% - 350px);
+	}
+}
+@media (max-width: 769px) {
+	.padding {
+		padding: 55px 30px;
+	}
+
+	.flex {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.theTeam__block {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.theTeam__content {
+		margin-bottom: 50px;
+	}
+
+	.progress {
+		width: 100%;
+	}
+}
+@media (max-width: 576px) {
+	.padding {
+		padding: 40px 15px;
+	}
+
+	.theTeam__pagination {
+		margin-top: 20px;
+	}
+
+	.subtitle {
+		margin-bottom: 30px;
+	}
+
+	.subtitle h2 {
+		font-size: 18px;;
+		letter-spacing: 3px;
+	}
+
+	.subtitle p {
+		margin-top: 20px;
+		font-size: 13px;
+	}
+
+	.theTeam__content {
+		padding: 0 25px;
+	}
+
+	.theTeam__name {
+		padding-right: 25px;
+		margin: 0 -25px 30px 0;
+	}
+}

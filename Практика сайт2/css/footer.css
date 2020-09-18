@@ -1,0 +1,61 @@
+.footer__logo {
+	font-size: 25px;
+	font-family: "Open Sans";
+	color: #323a45;
+	text-align: center;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.footer__text {
+	font-family: "Open Sans";
+	color: rgb(129, 134, 142);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.ul-social__li {
+	width: 25px;
+	height: 25px;
+	background-color: #3b5998;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 5px;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+}
+
+.twitter {
+	background-color: #26a6d1;
+	background-image: url(../img/twitter-brands.svg);
+}
+
+.instagram {
+	background-image: url(../img/instagram-brands.svg);
+	background-color: #3f729b;
+}
+
+.vimeo {
+	background-image: url(../img/facebook-f-brands.svg);
+	background-size: 40%;
+	background-position: 45% center;
+	background-color: #86c9ef;
+}
+
+.linkedin {
+	background-image: url(../img/youtube-brands.svg);
+	background-color: #0e76a8;
+}
+
+@media (max-width: 576px) {
+	.footer {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.footer__text {
+		margin-bottom: 20px;
+	}
+}

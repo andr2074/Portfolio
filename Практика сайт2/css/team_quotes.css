@@ -1,0 +1,70 @@
+.team-quotes {
+	margin-top: 120px;
+	background: url("../img/Bg_team_quotes.png") no-repeat;
+	background-size: cover;
+	background-position: 50% 35%;
+	justify-content: space-between;
+}
+.texts-team__quotes {
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 1 1 60%;
+	text-align: left;
+	color: rgb(178, 179, 179);
+}
+.texts-team__quotes h2 {
+	font-size: 22px;
+	font-family: "Source Sans Pro";
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 4px;
+	margin-bottom: 50px;
+}
+.texts-team__quotes p {
+	font-family: "Open Sans";
+	line-height: 1.8;
+}
+.quotes_name {
+	font-weight: bold;
+	color: rgb(200, 200, 200)!important;
+	text-transform: uppercase;
+}
+.quotes_name-text {
+	line-height: 1.75;
+	text-align: left;
+}
+.texts-team__mac {
+	background: url("../img/mac.png") center no-repeat;
+	background-size: contain;
+	flex: 1 1 60%;
+	height: 330px;
+	margin-top: -120px;
+}
+
+.texts-team__mac p {
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	margin-bottom: 50px;
+}
+@media (max-width: 992px) {
+	.team-quotes {
+		margin: 0;
+	}
+	.texts-team__mac {
+		display: none;
+	}
+}
+@media (max-width: 769px) {
+
+}
+@media (max-width: 576px) {
+	.texts-team__quotes h2 {
+		margin-bottom: 25px;
+	}
+	.texts-team__quotes p {
+		padding: 0 20px;
+	}
+}
