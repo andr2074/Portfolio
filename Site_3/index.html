@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper padding">
+		<h1 class="title">Survey Form</h1>
+		<div class="form__wrapper">
+			<h2 id="description">Let me know how I can improve my knowledge</h2>
+			<form id="surveyForm" method="GET" action="">
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-c">
+						<label id="name-label" for="name">Name:</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<input autofocus type="text" name="name" id="name" class="rightTab__inputField" placeholder="Enter your name" required>
+					</div>
+				</div>
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-c">
+						<label id="email-label" for="email">Email:</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<input type="email" name="email" id="email" class="rightTab__inputField" placeholder="Enter your Email" required>
+					</div>
+				</div>
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-c">
+						<label id="number-label" for="age">Age:</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<input type="number" name="age" id="number" min="14" max="99" class="rightTab__inputField" placeholder="Age">
+					</div>
+				</div>
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-c">
+						<label for="currentPos">Which option best describes your current role?</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<select name="currentPos" class="rightTab__dropdown" id="dropdown">
+						<option disabled value="volvo">Select an option</option>
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="preferNo">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				</div>
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-fe">
+						<label for="userRating">What is the likelihood that you get me?</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<ul>
+							<li class="radio">
+								<label>
+									<input type="radio" name="gender" value="definitely" checked>
+									Definitel
+								</label>
+							</li>
+							<li class="radio">
+								<label>
+									<input type="radio" name="gender" value="maybe">
+									Maybe
+								</label>
+							</li>
+							<li class="radio">
+								<label>
+									<input type="radio" name="gender" value="not sure">
+									Not sure
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-fe">
+						<label for="preferences">Things that should be improved in the future</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<ul>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Front-end Projects
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Back-end Projects
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Data Visualization
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Challenges
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Open Source Community
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Gitter help rooms
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Videos
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" type="checkbox"></input>
+									Additional Courses
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="surveyForm__rowTab rowTab d-f">
+					<div class="rowTab__leftTab d-f ai-fe">
+						<label for="comments">Any Comments or Suggestions?</label>
+					</div>
+					<div class="rowTab__rightTab rightTab d-f ai-c">
+						<textarea name="comments" id="comments" class="rightTab__inputField" placeholder="Enter your comment here..."></textarea>
+					</div>
+				</div>
+				<button class="surveyForm__btn" id="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+	
+</body>
+
+</html>

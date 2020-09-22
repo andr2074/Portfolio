@@ -155,8 +155,10 @@ h2 {
 }
 
 footer {
+	background-color: #81c5b24f;
 	justify-content: space-around;
 	margin: -10px auto;
+	box-shadow: 0px 1px 20px -2px #081f1fa3;
 }
 .footer__link {
 	position: relative;
