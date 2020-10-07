@@ -55,18 +55,21 @@ body {
 }
 
 header {
-	position: fixed;
+	height: 100vh;
+	background: linear-gradient(rgba(224, 235, 232, .0),
+		rgba(224, 235, 232, .5),
+		rgba(224, 235, 232, .7),
+		rgba(224, 235, 232, .4),
+		rgba(224, 235, 232, .0));
+}
+.header__navbar {
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 10vh;
-	background: linear-gradient(rgba(224, 235, 232, .2), rgba(224, 235, 232, .1));
 	justify-content: flex-end;
 	transition: 0.5s;
-}
-.header__white {
-	background: transparent;
-	transition: 0.9s;
 }
 .navbar__link {
 	font-size: 20px;
@@ -80,8 +83,6 @@ header {
 #welcome {
 	justify-content: space-around;
 	height: 90vh;
-	margin-top: 10vh;
-	background: linear-gradient(rgba(224, 235, 232, .1),rgba(224, 235, 232, .5), rgba(224, 235, 232, .7), rgba(224, 235, 232, .4), rgba(224, 235, 232, .0));
 }
 
 .welcome__photo{
@@ -199,7 +200,7 @@ footer {
 	.padding {
 		padding: 30px calc(50% - 250px);
 	}
-	header {
+	.header__navbar {
 		justify-content: center;
 	}
 	.navbar__link {
